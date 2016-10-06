@@ -1,0 +1,310 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+body,
+strong{
+    font-family: 'poppinsmedium';
+    color: black;
+}
+
+/*header*/
+
+header{
+    background-color: #1f1f2f;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 5;
+    
+}
+
+header nav{
+    margin-top: 25px;
+}
+
+header nav a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+header nav a:hover,
+.logo a{
+    color: white;
+}
+
+.li-available a{
+    color: white;
+    text-decoration: underline;
+}
+
+/**main**/
+
+.main-slider{
+    position: relative;
+    height: 90vh;
+    padding: 200px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+div.wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -moz-transition: all 5s;
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    background-image: url(../img/geografia.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.main-slider:hover div.wrap{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+.main-title{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 3em;
+}
+
+.main-par{
+    font-size: 1.3em;
+    color: white;
+    padding: 20px 0;
+    font-weight: lighter;
+}
+
+.main-btn{
+    padding: 20px 0;
+}
+
+.main-btn a{
+    padding: 10px 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+.main-btn a:hover{
+    background-color: white;
+    color: black;
+}
+
+/**content-container**/
+
+.breadcrumb{
+    padding: 10px 0 0 0;
+}
+
+.content-right{
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.content-right img{
+    width: 100%;
+}
+
+.img-legend{
+    font-family: 'poppinslight';
+    font-size: 0.9em;
+    color: gray;
+}
+
+.content-int{
+    top: 0;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.content-cont{
+    margin-bottom: 0;
+}
+
+.breadcrumb{
+    border-radius: 0;
+    margin: 0;
+}
+
+.content-cont>div{
+    background-color: transparent;
+    padding: 20px 10px;
+}
+
+.content-cont .sidebar{
+    padding: 30px 0 0 0;
+    background-color: #c6c6c6;
+}
+
+/**content interior**/
+.main-int{
+    position: relative;
+    padding: 100px 0 30px 0;
+    background: url(../img/islandia-768x513.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.main-int h1{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+}
+
+.img-contenido{
+    padding: 10px;
+}
+
+.content-home{
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.content-int{
+    overflow: hidden;
+    padding: 0 0;
+}
+
+.content-cont{
+    padding-top: 0;
+}
+
+.content-home img,
+.content-int img{
+    width: 100%;
+}
+
+.content-par{
+    font-family: 'poppinslight';
+}
+
+/**categorías**/
+.categ-entradas{
+    padding-top: 30px;
+}
+
+.entrada{
+    margin-bottom: 40px;
+}
+
+.entrada figure{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.entrada figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.entrada .fecha-tag{
+    margin: 5px 0;
+    padding: 0 5px;
+    background-color: #8A99BD;
+}
+.entrada .par-fecha{
+    padding: 10px 5px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.entrada .tags{
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.entrada .tags li{
+    color: white;
+}
+
+.tags .label{
+    background-color: #4B5D8C;
+    cursor: pointer;
+}
+
+.entrada .btn-vermas{
+    padding: 10px 20px;
+    background-color: #4B5D8C
+}
+
+.entrada .btn-vermas:hover{
+    background-color: #8A99BD;
+}
+
+/**Widgets**/
+
+.home-widget{
+    background-color: gray;
+    padding: 10px 0;
+}
+
+.widget-box{
+    background-color: black;
+    height: 100px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/**footer**/
+.subfooter,
+footer{
+    background-color: #1f1f2f;
+    padding: 20px 0 10px 0;
+    color: white;
+}
+
+.subfooter{
+    border-bottom: 1px solid rgba(57, 57, 57, 0.2);
+}
+
+footer{
+    font-family: 'poppinslight';
+}
+
+.sub-rs a{
+    font-size: 1.4em;
+    color: white;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.sub-rs a:hover{
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
